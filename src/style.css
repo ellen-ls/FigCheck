@@ -34,15 +34,21 @@ header {
 
 .upload {
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
+    height: 60vh;
+    margin-top: 20px;
 
 }
 
 .picture {
-    margin-top: 50px;
-    height: 400px;
-    width: 400px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 50vh;
+    width: 30vw;
+    left: 480px;
     border: 2px double #c6c6c6;
     border-radius: 5px;
     cursor: pointer;
@@ -52,13 +58,31 @@ header {
 }
 
 #picture_input {
-    display: none;
+    display: none; 
 }
 
 .picture_image{
-    max-width: 100%;
-    height: 50%;
+    display: flex;
+    width: 100px; 
+    height: 100px; 
    
+    
+}
+#uploadButton{
+    
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8b4caf;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#progress{
+text-align: center;
+display: none;
 }
 
 footer{

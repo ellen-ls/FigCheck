@@ -22,13 +22,19 @@
 
         <!-- Form to upload image with preview -->
 
-       <div class="upload" >
+       <form class="upload" id="formUpload" enctype="multipart/form-data" >
 
           <label class="picture" tabindex="0">
             <input type="file" accept="image/*" id="picture_input">
             <span class="picture_image"></span>
+                   
           </label>
-        </div> 
+          <div>
+          <button type="button" id="uploadButton">Upload</button>         
+        </div>
+        </form> 
+        <div id="progress">0%</div>
+        
         <footer>
           <h2>Contact us</h2>
         
